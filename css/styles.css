@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+/* HTML CHALLENGE */
+/* Iteration 1: Inline vs block elements */
+.span-1 {
+    color: purple;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.span-2 {
+    color: blue;
+    font-size: 18px;
+}
+
+/* Iteration 3: simple table */
+#simple-table {
+    width: 200px;
+    height: 80px;
+    border: 1px solid gray;
+    text-align: center;
+    border-spacing: 2px;
+}
+
+.red-cards {
+    border: 1px solid red;
+    color: red;
+}
+
+/* CSS CHALLENGE */
+/* Iteration 1: Red target */
+.box {
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 50px;
+}
+
+.target {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 3px dashed black;
+    background-color: red;
+}
+
+/* Iteration 2: shaped table */
+.shaped-table {
+    box-sizing: border-box;
+    width: 300px;
+    height: 150px;
+    border-spacing: 1px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+#second-row > td:nth-child(odd) {
+    background-color: lightblue;
+}
+
+
+/* Iteration 3 : purple blocks */
+.purple-block {
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.div-rows {
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 5px 5px 0 5px;
+}
+
+.div-rows > div {
+    box-sizing: border-box;
+    background: purple;
+    color: white;
+    padding: 0 5px;
+}
+
+.div-rows:nth-child(2) {
+    text-align: right;
+}
+
+.div-rows:nth-child(1) > div:nth-child(1),
+.div-rows:nth-child(2) > div:nth-child(2) {
+    width: 25%;
+}
+
+.div-rows:nth-child(1) > div:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+.div-rows:nth-child(1) > div:nth-child(2),
+.div-rows:nth-child(2) > div:nth-child(1) {
+    width: 75%;
+}
+
+.div-rows:nth-child(2) > div:nth-child(1) {
+    margin-left: 25%;
+}
+
+/* Bonus 1: Inline block rows */
+.inline, .flex-blocks {
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.blocks-row-1 {
+    background: red;
+}
+
+.blocks-row-2 {
+    background: black;
+}
+
+.blocks-row-1 > div,
+.blocks-row-2 > div {
+    display: inline-block;
+    width: 24%;
+    font-size: 16px;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.blocks-row-1 > div {
+    border-left: 2px solid black;
+}
+
+.blocks-row-1 > div:nth-child(4) {
+    border-right: 2px solid black;
+}
+
+.blocks-row-2 > div {
+    border-left: 2px solid red;
+}
+
+.blocks-row-2 > div:nth-child(4){
+    border-right: 2px solid red;
+}   
+
+
+/* Bonus 2: Flexbox rows */
+.flex-blocks {
+    border: 1px solid purple;
+}
+.flex-row-1, .flex-row-2 {
+    display: flex;
+    
+}
+
+
+
+
+
+
